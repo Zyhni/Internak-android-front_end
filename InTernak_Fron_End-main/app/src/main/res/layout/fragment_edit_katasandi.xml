@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragment.EditKatasandiFragment">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A6538"
+        android:padding="12dp"
+        android:text="Ubah Kata Sandi"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nama Hewan Label -->
+    <TextView
+        android:id="@+id/nama_hewan_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kata Sandi Lama"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <!-- Nama Hewan -->
+    <EditText
+        android:id="@+id/sandilama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_hewan_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+    <ImageButton
+        android:id="@+id/sandilamaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mata"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/sandilama"
+        app:layout_constraintBottom_toBottomOf="@id/sandilama"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Usia Hewan Label -->
+    <TextView
+        android:id="@+id/usia_hewan_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kata Sandi Baru"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandilama"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <!-- Usia Hewan -->
+    <EditText
+        android:id="@+id/sandibaru"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usia_hewan_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+    <ImageButton
+        android:id="@+id/sandibaruview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mata"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/sandibaru"
+        app:layout_constraintBottom_toBottomOf="@id/sandibaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Berat Hewan Label -->
+    <TextView
+        android:id="@+id/berat_hewan_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Kata Sandi"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandibaru"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <!-- Berat Hewan -->
+    <EditText
+        android:id="@+id/konfirmasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/berat_hewan_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+    <ImageButton
+        android:id="@+id/konfirmasiview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_mata"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/konfirmasi"
+        app:layout_constraintBottom_toBottomOf="@id/konfirmasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konfirmasi"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragment.TambahKandangFragment">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2A6538"
+        android:padding="12dp"
+        android:text="Tambah Kandang"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nama_kandang_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama kandang"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/nama_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_kandang_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/jenis_kandang_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jenis kandang"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <Spinner
+        android:id="@+id/jenis_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jenis_kandang_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/kapasitas_kandang_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kapasitas kandang (Ekor)"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jenis_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/kapasitas_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kapasitas_kandang_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/luas_kandang_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Luas kandang (Meter Persegi)"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kapasitas_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/luas_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luas_kandang_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/alamat_kandang_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Alamat kandang"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luas_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/alamat_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_kandang_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <TextView
+        android:id="@+id/kapasitas_suhu_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Suhu kandang (Celcius)"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/suhu_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_texsbox"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kapasitas_suhu_label"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/latitude_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:enabled="false"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/suhu_kandang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/longitude_kandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:enabled="false"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/latitude_kandang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="numberDecimal" />
+
+    <!-- MapView -->
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/maps_view"
+        android:layout_width="475dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/fabAddKandang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/fabAddKandang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan Kandang"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suhu_kandang"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
